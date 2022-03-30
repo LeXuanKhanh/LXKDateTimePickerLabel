@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint LXKDateTImePickerLabel.podspec' to ensure this is a
+#  Be sure to run `pod spec lint LXKDateTimePickerLabel.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
    #   * Write the description between the DESC delimiters below.
    #   * Finally, don't worry about the indent, CocoaPods strips it!
    spec.description  = <<-DESC
-   A Label which allow choose date time on clicking it
+   A Label which allow choose date time on clicking it, easy for customization
                     DESC
  
    spec.homepage     = "https://github.com/LeXuanKhanh/LXKDateTimePickerLabel"
