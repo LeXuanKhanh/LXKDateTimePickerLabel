@@ -25,9 +25,10 @@ Pod::Spec.new do |spec|
    #   * Write the description between the DESC delimiters below.
    #   * Finally, don't worry about the indent, CocoaPods strips it!
    spec.description  = <<-DESC
+   A Label which allow choose date time on clicking it
                     DESC
  
-   spec.homepage     = "http://EXAMPLE/LXKDateTimePickerLabel"
+   spec.homepage     = "https://github.com/LeXuanKhanh/LXKDateTimePickerLabel"
    # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
  
  
