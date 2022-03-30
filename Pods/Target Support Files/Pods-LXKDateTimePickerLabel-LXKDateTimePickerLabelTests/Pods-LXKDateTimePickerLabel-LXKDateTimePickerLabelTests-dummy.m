@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_LXKDateTimePickerLabel_LXKDateTimePickerLabelTests : NSObject
+@end
+@implementation PodsDummy_Pods_LXKDateTimePickerLabel_LXKDateTimePickerLabelTests
+@end

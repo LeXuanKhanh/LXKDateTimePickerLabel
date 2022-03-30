@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0093680A6B08109471A90D9CAAFE892E /* Pods-LXKDateTimePickerLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09CCF91BB66813583409B6D50490274E /* Pods-LXKDateTimePickerLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FD180C53D444DF0FEA104C77F9DE9CB /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE8C3B5B789E15A7204781599E8A7FF /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-dummy.m */; };
+		8CA59D7EC9488F7408346148CBEDD35A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9573BBD83CDC5143484A756302B426F5 /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 740BEA66C5735041643C35CE05F948B2 /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF287E6C037A5E41F5490885EBF723B6 /* Pods-LXKDateTimePickerLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5804B675A23DA1658F21D0F05032BA5 /* Pods-LXKDateTimePickerLabel-dummy.m */; };
+		F80E5BBFB3FA05FD4F129F25124C9882 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09CCF91BB66813583409B6D50490274E /* Pods-LXKDateTimePickerLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LXKDateTimePickerLabel-umbrella.h"; sourceTree = "<group>"; };
+		14142D1632F754F1A183AF8668693009 /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-Info.plist"; sourceTree = "<group>"; };
+		1F186331A4766AE013C878E790BFA363 /* Pods-LXKDateTimePickerLabel */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LXKDateTimePickerLabel"; path = Pods_LXKDateTimePickerLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2765DADF913B19809EFD4E58D2E8DD4E /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests.release.xcconfig"; sourceTree = "<group>"; };
+		409B7AA0E5A574F24EE3B55B67596B05 /* Pods-LXKDateTimePickerLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXKDateTimePickerLabel.debug.xcconfig"; sourceTree = "<group>"; };
+		5A1CC1CB537771E8388B725FFC44193D /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		740BEA66C5735041643C35CE05F948B2 /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-umbrella.h"; sourceTree = "<group>"; };
+		7F324E4B617FA2972C7004BC2D2B0C4B /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests"; path = Pods_LXKDateTimePickerLabel_LXKDateTimePickerLabelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8252AE98B5F061DAF8D048669477233D /* Pods-LXKDateTimePickerLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXKDateTimePickerLabel.release.xcconfig"; sourceTree = "<group>"; };
+		8524982A9821D2EFCD181512B5C21E0D /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests.modulemap"; sourceTree = "<group>"; };
+		89899491854B5CED6A0968B00E773137 /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8C4077B776F41EA339F3B4DA96FFC1B7 /* Pods-LXKDateTimePickerLabel-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LXKDateTimePickerLabel-acknowledgements.markdown"; sourceTree = "<group>"; };
+		96E6AC05D9266BD6D4151A72CE080F1B /* Pods-LXKDateTimePickerLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LXKDateTimePickerLabel.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B6050E4FDD5E0AD6645DE74150C509C2 /* Pods-LXKDateTimePickerLabel-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXKDateTimePickerLabel-acknowledgements.plist"; sourceTree = "<group>"; };
+		D155B5302EBA670E0ADECACAAC1A4F0F /* Pods-LXKDateTimePickerLabel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXKDateTimePickerLabel-Info.plist"; sourceTree = "<group>"; };
+		D1EF5250C4B031F52646F40942CAA1BA /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5804B675A23DA1658F21D0F05032BA5 /* Pods-LXKDateTimePickerLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LXKDateTimePickerLabel-dummy.m"; sourceTree = "<group>"; };
+		FBE8C3B5B789E15A7204781599E8A7FF /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32578F3178AFDD1E044F806DDDFF38A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CA59D7EC9488F7408346148CBEDD35A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		928DD10EC731CC5959FC8E0E1AFDAD22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80E5BBFB3FA05FD4F129F25124C9882 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5688B446EF34580985EC7A282A07A3EE /* Pods-LXKDateTimePickerLabel */ = {
+			isa = PBXGroup;
+			children = (
+				96E6AC05D9266BD6D4151A72CE080F1B /* Pods-LXKDateTimePickerLabel.modulemap */,
+				8C4077B776F41EA339F3B4DA96FFC1B7 /* Pods-LXKDateTimePickerLabel-acknowledgements.markdown */,
+				B6050E4FDD5E0AD6645DE74150C509C2 /* Pods-LXKDateTimePickerLabel-acknowledgements.plist */,
+				F5804B675A23DA1658F21D0F05032BA5 /* Pods-LXKDateTimePickerLabel-dummy.m */,
+				D155B5302EBA670E0ADECACAAC1A4F0F /* Pods-LXKDateTimePickerLabel-Info.plist */,
+				09CCF91BB66813583409B6D50490274E /* Pods-LXKDateTimePickerLabel-umbrella.h */,
+				409B7AA0E5A574F24EE3B55B67596B05 /* Pods-LXKDateTimePickerLabel.debug.xcconfig */,
+				8252AE98B5F061DAF8D048669477233D /* Pods-LXKDateTimePickerLabel.release.xcconfig */,
+			);
+			name = "Pods-LXKDateTimePickerLabel";
+			path = "Target Support Files/Pods-LXKDateTimePickerLabel";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7E3D9EC433482BE335F7D3BDF9A9C803 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F186331A4766AE013C878E790BFA363 /* Pods-LXKDateTimePickerLabel */,
+				7F324E4B617FA2972C7004BC2D2B0C4B /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81382D9EE4F4AE1E1A569C95E147DB1F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5688B446EF34580985EC7A282A07A3EE /* Pods-LXKDateTimePickerLabel */,
+				AB9A6BC3C5EF25D4CCDCADFCE7B6CA00 /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AB9A6BC3C5EF25D4CCDCADFCE7B6CA00 /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests */ = {
+			isa = PBXGroup;
+			children = (
+				8524982A9821D2EFCD181512B5C21E0D /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests.modulemap */,
+				89899491854B5CED6A0968B00E773137 /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-acknowledgements.markdown */,
+				5A1CC1CB537771E8388B725FFC44193D /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-acknowledgements.plist */,
+				FBE8C3B5B789E15A7204781599E8A7FF /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-dummy.m */,
+				14142D1632F754F1A183AF8668693009 /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-Info.plist */,
+				740BEA66C5735041643C35CE05F948B2 /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-umbrella.h */,
+				D1EF5250C4B031F52646F40942CAA1BA /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests.debug.xcconfig */,
+				2765DADF913B19809EFD4E58D2E8DD4E /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests.release.xcconfig */,
+			);
+			name = "Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests";
+			path = "Target Support Files/Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				7E3D9EC433482BE335F7D3BDF9A9C803 /* Products */,
+				81382D9EE4F4AE1E1A569C95E147DB1F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5D20F45528CD7518DD5AF7EDB8905D77 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0093680A6B08109471A90D9CAAFE892E /* Pods-LXKDateTimePickerLabel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E58BC84C48511E3D97949ABC18B826CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9573BBD83CDC5143484A756302B426F5 /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9F59E4F1AB15DBAF0B1EC78E32A351BD /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C9C91FA22EE6E592E8FC1F77135CD1B /* Build configuration list for PBXNativeTarget "Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests" */;
+			buildPhases = (
+				E58BC84C48511E3D97949ABC18B826CA /* Headers */,
+				91849796CAE03A33236759010514FA0A /* Sources */,
+				32578F3178AFDD1E044F806DDDFF38A6 /* Frameworks */,
+				27E89DB6ADCB7E813C42889EFB9A863F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests";
+			productName = Pods_LXKDateTimePickerLabel_LXKDateTimePickerLabelTests;
+			productReference = 7F324E4B617FA2972C7004BC2D2B0C4B /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		E43E87093A7C4B208C495F12A3EFE949 /* Pods-LXKDateTimePickerLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DC90DBC479E06B271B5E27A3615AB47 /* Build configuration list for PBXNativeTarget "Pods-LXKDateTimePickerLabel" */;
+			buildPhases = (
+				5D20F45528CD7518DD5AF7EDB8905D77 /* Headers */,
+				4B39655340A5B0E6AED7E9D65E5EFBF7 /* Sources */,
+				928DD10EC731CC5959FC8E0E1AFDAD22 /* Frameworks */,
+				7F0341688C381B07B7709EB0CD17A1DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LXKDateTimePickerLabel";
+			productName = Pods_LXKDateTimePickerLabel;
+			productReference = 1F186331A4766AE013C878E790BFA363 /* Pods-LXKDateTimePickerLabel */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 7E3D9EC433482BE335F7D3BDF9A9C803 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E43E87093A7C4B208C495F12A3EFE949 /* Pods-LXKDateTimePickerLabel */,
+				9F59E4F1AB15DBAF0B1EC78E32A351BD /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27E89DB6ADCB7E813C42889EFB9A863F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F0341688C381B07B7709EB0CD17A1DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B39655340A5B0E6AED7E9D65E5EFBF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF287E6C037A5E41F5490885EBF723B6 /* Pods-LXKDateTimePickerLabel-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91849796CAE03A33236759010514FA0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD180C53D444DF0FEA104C77F9DE9CB /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		09154F881C5A481B9A50E4EDFF46EA12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8252AE98B5F061DAF8D048669477233D /* Pods-LXKDateTimePickerLabel.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LXKDateTimePickerLabel/Pods-LXKDateTimePickerLabel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LXKDateTimePickerLabel/Pods-LXKDateTimePickerLabel.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3338EACC9AFA2CBE08584668F4244ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1EF5250C4B031F52646F40942CAA1BA /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests/Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests/Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8FC15E33EF273D55D664E5553159AD33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2765DADF913B19809EFD4E58D2E8DD4E /* Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests/Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests/Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D6BBC9B24E72EECE398614F37C336F2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 409B7AA0E5A574F24EE3B55B67596B05 /* Pods-LXKDateTimePickerLabel.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LXKDateTimePickerLabel/Pods-LXKDateTimePickerLabel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LXKDateTimePickerLabel/Pods-LXKDateTimePickerLabel.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C9C91FA22EE6E592E8FC1F77135CD1B /* Build configuration list for PBXNativeTarget "Pods-LXKDateTimePickerLabel-LXKDateTimePickerLabelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3338EACC9AFA2CBE08584668F4244ACD /* Debug */,
+				8FC15E33EF273D55D664E5553159AD33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DC90DBC479E06B271B5E27A3615AB47 /* Build configuration list for PBXNativeTarget "Pods-LXKDateTimePickerLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6BBC9B24E72EECE398614F37C336F2D /* Debug */,
+				09154F881C5A481B9A50E4EDFF46EA12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
