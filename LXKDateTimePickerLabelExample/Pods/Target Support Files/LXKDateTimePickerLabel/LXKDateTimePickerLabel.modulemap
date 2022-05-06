@@ -1,0 +1,6 @@
+framework module LXKDateTimePickerLabel {
+  umbrella header "LXKDateTimePickerLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LXKDateTimePickerLabelExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aiM-T8-yKX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ab0-D4-S5d">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="420"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zG-FQ-Tel">
+                                                <rect key="frame" x="170" y="52.5" width="74.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="w4r-im-gpw">
+                                                <rect key="frame" x="0.0" y="81" width="414" height="196"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoI-2b-OVO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="change min date"/>
+                                                        <connections>
+                                                            <action selector="setMinDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WfZ-DR-yiM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoA-mh-RY0">
+                                                        <rect key="frame" x="0.0" y="31" width="414" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="change max date"/>
+                                                        <connections>
+                                                            <action selector="setMaxDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yXZ-6D-YFN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhx-M4-zuZ">
+                                                        <rect key="frame" x="0.0" y="62" width="414" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="change random date"/>
+                                                        <connections>
+                                                            <action selector="changeDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LJD-qy-g2I"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="picker type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9H-yR-Me5">
+                                                        <rect key="frame" x="0.0" y="93" width="414" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rvy-9M-fNB">
+                                                        <rect key="frame" x="0.0" y="113.5" width="414" height="31"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KX8-Ji-wsJ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="138" height="31"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="date time"/>
+                                                                <connections>
+                                                                    <action selector="pickerTypeDateTimeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XEn-du-icp"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fI-3Q-0bs">
+                                                                <rect key="frame" x="138" y="0.0" width="138" height="31"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="date"/>
+                                                                <connections>
+                                                                    <action selector="pickerTypeDateTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tz7-V9-ZGl"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIT-xG-Q5y">
+                                                                <rect key="frame" x="276" y="0.0" width="138" height="31"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="time"/>
+                                                                <connections>
+                                                                    <action selector="pickerTypeTimeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZVN-nx-SMu"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="picker style" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsF-8f-WsR">
+                                                        <rect key="frame" x="0.0" y="144.5" width="414" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3Wb-aX-zZ7">
+                                                        <rect key="frame" x="0.0" y="165" width="414" height="31"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7n-r5-YOH">
+                                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="31"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="automatic"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSo-mY-yaL">
+                                                                <rect key="frame" x="103.5" y="0.0" width="103.5" height="31"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="wheels"/>
+                                                                <connections>
+                                                                    <action selector="pickerStyleWheelsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mxg-kJ-KbE"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="381-qA-Azw">
+                                                                <rect key="frame" x="207" y="0.0" width="103.5" height="31"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="compact"/>
+                                                                <connections>
+                                                                    <action selector="pickerStyleCompactTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FY5-sa-rLC"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixH-h8-aat">
+                                                                <rect key="frame" x="310.5" y="0.0" width="103.5" height="31"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="inline"/>
+                                                                <connections>
+                                                                    <action selector="pickerStyleInlineTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EJy-Cv-WQK"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="notify change" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Nz-T9-3Iy">
+                                                <rect key="frame" x="155" y="285" width="104" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FeN-te-U0U">
+                                                <rect key="frame" x="182.5" y="313.5" width="51" height="31"/>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tea-pz-eyY">
+                                                <rect key="frame" x="170" y="352.5" width="74.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ph-Pk-VDs">
+                                                <rect key="frame" x="182.5" y="381" width="51" height="31"/>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgU-1S-f8Y" customClass="LXKDateTimePickerLabel" customModule="LXKDateTimePickerLabel">
+                                                <rect key="frame" x="16" y="16" width="382" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="w4r-im-gpw" firstAttribute="centerX" secondItem="ab0-D4-S5d" secondAttribute="centerX" id="8rc-kb-4GK"/>
+                                            <constraint firstAttribute="bottom" secondItem="7ph-Pk-VDs" secondAttribute="bottom" constant="8" id="BBK-bU-fpL"/>
+                                            <constraint firstItem="LgU-1S-f8Y" firstAttribute="leading" secondItem="ab0-D4-S5d" secondAttribute="leading" constant="16" id="DkF-co-qkz"/>
+                                            <constraint firstAttribute="trailing" secondItem="LgU-1S-f8Y" secondAttribute="trailing" constant="16" id="Gb6-0n-0g0"/>
+                                            <constraint firstItem="9zG-FQ-Tel" firstAttribute="centerX" secondItem="ab0-D4-S5d" secondAttribute="centerX" id="HWs-mf-GUR"/>
+                                            <constraint firstItem="LgU-1S-f8Y" firstAttribute="top" secondItem="ab0-D4-S5d" secondAttribute="top" constant="16" id="J92-Ww-1II"/>
+                                            <constraint firstItem="Tea-pz-eyY" firstAttribute="centerX" secondItem="ab0-D4-S5d" secondAttribute="centerX" id="MDg-p6-nDA"/>
+                                            <constraint firstAttribute="trailing" secondItem="w4r-im-gpw" secondAttribute="trailing" id="NYH-mC-W3A"/>
+                                            <constraint firstItem="w4r-im-gpw" firstAttribute="top" secondItem="9zG-FQ-Tel" secondAttribute="bottom" constant="8" id="Obe-QC-kN5"/>
+                                            <constraint firstItem="FeN-te-U0U" firstAttribute="top" secondItem="6Nz-T9-3Iy" secondAttribute="bottom" constant="8" id="Sty-UF-YEw"/>
+                                            <constraint firstItem="7ph-Pk-VDs" firstAttribute="top" secondItem="Tea-pz-eyY" secondAttribute="bottom" constant="8" id="Wa0-EB-47k"/>
+                                            <constraint firstItem="w4r-im-gpw" firstAttribute="leading" secondItem="ab0-D4-S5d" secondAttribute="leading" id="a4J-SM-E4e"/>
+                                            <constraint firstItem="6Nz-T9-3Iy" firstAttribute="top" secondItem="w4r-im-gpw" secondAttribute="bottom" constant="8" id="bsH-Et-m5f"/>
+                                            <constraint firstItem="FeN-te-U0U" firstAttribute="centerX" secondItem="ab0-D4-S5d" secondAttribute="centerX" id="fGE-B1-3vm"/>
+                                            <constraint firstItem="7ph-Pk-VDs" firstAttribute="centerX" secondItem="ab0-D4-S5d" secondAttribute="centerX" id="gD8-FZ-eTR"/>
+                                            <constraint firstItem="Tea-pz-eyY" firstAttribute="top" secondItem="FeN-te-U0U" secondAttribute="bottom" constant="8" id="m1i-Ut-0bP"/>
+                                            <constraint firstItem="9zG-FQ-Tel" firstAttribute="top" secondItem="LgU-1S-f8Y" secondAttribute="bottom" constant="16" id="q7f-5a-LPO"/>
+                                            <constraint firstItem="6Nz-T9-3Iy" firstAttribute="centerX" secondItem="ab0-D4-S5d" secondAttribute="centerX" id="w1d-v4-Abo"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ab0-D4-S5d" firstAttribute="bottom" secondItem="cJa-46-0a7" secondAttribute="bottom" id="3Qx-UJ-sDI"/>
+                                    <constraint firstItem="ab0-D4-S5d" firstAttribute="trailing" secondItem="cJa-46-0a7" secondAttribute="trailing" id="GaB-Aw-xRh"/>
+                                    <constraint firstItem="ab0-D4-S5d" firstAttribute="leading" secondItem="cJa-46-0a7" secondAttribute="leading" id="Qs4-6X-3rQ"/>
+                                    <constraint firstItem="ab0-D4-S5d" firstAttribute="width" secondItem="Mm5-fE-AIU" secondAttribute="width" id="cq0-cT-mpn"/>
+                                    <constraint firstItem="ab0-D4-S5d" firstAttribute="top" secondItem="cJa-46-0a7" secondAttribute="top" id="iud-at-2sL"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="cJa-46-0a7"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Mm5-fE-AIU"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aiM-T8-yKX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3lm-7k-BOs"/>
+                            <constraint firstItem="aiM-T8-yKX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="H0c-e1-rRy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aiM-T8-yKX" secondAttribute="bottom" id="y7r-Hn-pHM"/>
+                            <constraint firstItem="aiM-T8-yKX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="z9Q-WH-dSU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="9zG-FQ-Tel" id="okV-TR-6th"/>
+                        <outlet property="dateTimePickerLabel" destination="LgU-1S-f8Y" id="1oP-uU-trP"/>
+                        <outlet property="isAnimationSwitch" destination="7ph-Pk-VDs" id="s12-yY-Lca"/>
+                        <outlet property="isNotifySwitch" destination="FeN-te-U0U" id="hXl-pn-22K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

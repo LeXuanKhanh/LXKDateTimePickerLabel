@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'LXKDateTimePickerLabelExample' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for LXKDateTimePickerLabelExample
+  pod 'LXKDateTimePickerLabel', :git => "https://github.com/LeXuanKhanh/LXKDateTimePickerLabel.git"
+  pod 'IQKeyboardManagerSwift'
+
+  target 'LXKDateTimePickerLabelExampleTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'LXKDateTimePickerLabelExampleUITests' do
+    # Pods for testing
+  end
+
+end
