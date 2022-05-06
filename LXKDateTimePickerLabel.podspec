@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
    #
  
    spec.name         = "LXKDateTimePickerLabel"
-   spec.version      = "1.0.0"
+   spec.version      = "1.0.1"
    spec.summary      = "A Label which allow choose date time on clicking it"
  
    # This description is used to generate tags and improve search results.
