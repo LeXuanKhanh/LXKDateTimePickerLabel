@@ -10,7 +10,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   LXKDateTimePickerLabel:
-    :commit: 8064d2d888986e620b80165eb096c5252eccec08
+    :commit: 9224090a73d065181bee3ffb5713d0e9bd9bbda6
     :git: https://github.com/LeXuanKhanh/LXKDateTimePickerLabel.git
 
 SPEC CHECKSUMS:
