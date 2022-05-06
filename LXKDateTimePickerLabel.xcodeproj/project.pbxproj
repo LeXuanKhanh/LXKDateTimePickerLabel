@@ -15,6 +15,8 @@
 		FA98AB0627F1AE3B001DCB91 /* LXKDateTimePickerLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = FA98AAF827F1AE3A001DCB91 /* LXKDateTimePickerLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FABE35EA27F1B59700B71EAA /* LXKDateTimePickerLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE35E727F1B59700B71EAA /* LXKDateTimePickerLabel.swift */; };
 		FABE35EB27F1B59700B71EAA /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE35E827F1B59700B71EAA /* DateExtensions.swift */; };
+		FADF7A6D2824B828005DB98B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FADF7A6C2824B828005DB98B /* README.md */; };
+		FADF7A712824BA0D005DB98B /* image1.gif in Resources */ = {isa = PBXBuildFile; fileRef = FADF7A6F2824BA0D005DB98B /* image1.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		FA98AB0427F1AE3B001DCB91 /* LXKDateTimePickerLabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXKDateTimePickerLabelTests.swift; sourceTree = "<group>"; };
 		FABE35E727F1B59700B71EAA /* LXKDateTimePickerLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXKDateTimePickerLabel.swift; sourceTree = "<group>"; };
 		FABE35E827F1B59700B71EAA /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		FADF7A6C2824B828005DB98B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FADF7A6F2824BA0D005DB98B /* image1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image1.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 		FA98AAEB27F1AE3A001DCB91 = {
 			isa = PBXGroup;
 			children = (
+				FADF7A6E2824B9A1005DB98B /* ReadmeImage */,
+				FADF7A6C2824B828005DB98B /* README.md */,
 				FA98AAF727F1AE3A001DCB91 /* LXKDateTimePickerLabel */,
 				FA98AB0327F1AE3B001DCB91 /* LXKDateTimePickerLabelTests */,
 				FA98AAF627F1AE3A001DCB91 /* Products */,
@@ -121,6 +127,14 @@
 				FA98AB0427F1AE3B001DCB91 /* LXKDateTimePickerLabelTests.swift */,
 			);
 			path = LXKDateTimePickerLabelTests;
+			sourceTree = "<group>";
+		};
+		FADF7A6E2824B9A1005DB98B /* ReadmeImage */ = {
+			isa = PBXGroup;
+			children = (
+				FADF7A6F2824BA0D005DB98B /* image1.gif */,
+			);
+			path = ReadmeImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +231,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADF7A712824BA0D005DB98B /* image1.gif in Resources */,
+				FADF7A6D2824B828005DB98B /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
