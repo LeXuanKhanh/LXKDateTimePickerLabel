@@ -1,8 +1,14 @@
 PODS:
+  - IQKeyboardManagerSwift (6.5.9)
   - LXKDateTimePickerLabel (1.0.0)
 
 DEPENDENCIES:
+  - IQKeyboardManagerSwift
   - LXKDateTimePickerLabel (from `https://github.com/LeXuanKhanh/LXKDateTimePickerLabel.git`)
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
 
 EXTERNAL SOURCES:
   LXKDateTimePickerLabel:
@@ -14,8 +20,9 @@ CHECKOUT OPTIONS:
     :git: https://github.com/LeXuanKhanh/LXKDateTimePickerLabel.git
 
 SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
   LXKDateTimePickerLabel: 55ac9fe99a7cdee56d6a8b8bd99a957761173ceb
 
-PODFILE CHECKSUM: 64659e9a6e5128115e3cdfeef60f984c5fa67e75
+PODFILE CHECKSUM: d68dd076208a84883529a74dbd07890708900117
 
 COCOAPODS: 1.11.2
