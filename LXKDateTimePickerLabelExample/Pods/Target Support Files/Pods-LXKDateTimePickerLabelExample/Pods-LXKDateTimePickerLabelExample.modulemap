@@ -1,0 +1,6 @@
+framework module Pods_LXKDateTimePickerLabelExample {
+  umbrella header "Pods-LXKDateTimePickerLabelExample-umbrella.h"
+
+  export *
+  module * { export * }
+}

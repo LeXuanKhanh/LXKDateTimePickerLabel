@@ -1,0 +1,21 @@
+PODS:
+  - LXKDateTimePickerLabel (1.0.0)
+
+DEPENDENCIES:
+  - LXKDateTimePickerLabel (from `https://github.com/LeXuanKhanh/LXKDateTimePickerLabel.git`)
+
+EXTERNAL SOURCES:
+  LXKDateTimePickerLabel:
+    :git: https://github.com/LeXuanKhanh/LXKDateTimePickerLabel.git
+
+CHECKOUT OPTIONS:
+  LXKDateTimePickerLabel:
+    :commit: 8064d2d888986e620b80165eb096c5252eccec08
+    :git: https://github.com/LeXuanKhanh/LXKDateTimePickerLabel.git
+
+SPEC CHECKSUMS:
+  LXKDateTimePickerLabel: 55ac9fe99a7cdee56d6a8b8bd99a957761173ceb
+
+PODFILE CHECKSUM: 64659e9a6e5128115e3cdfeef60f984c5fa67e75
+
+COCOAPODS: 1.11.2
