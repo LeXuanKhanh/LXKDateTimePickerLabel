@@ -29,23 +29,25 @@ public enum LXKDatePickerViewStyle : Int {
 }
 
 
-class LXKDateTimePickerLabel: UILabel {
-    let textField: UITextField = {
+public class LXKDateTimePickerLabel: UILabel {
+    
+    // MARK: - Public Variables
+    public let textField: UITextField = {
         let txt = UITextField()
         txt.alpha = 0
         return txt
     }()
     
-    var tapRecognizer = UITapGestureRecognizer()
+    public  var tapRecognizer = UITapGestureRecognizer()
     
-    var datePicker: UIDatePicker = {
+    public var datePicker: UIDatePicker = {
         let picker = UIDatePicker()
         picker.translatesAutoresizingMaskIntoConstraints = false
         return picker
     }()
     
     /// countDownTimer style is not supported
-    var pickerType = UIDatePicker.Mode.dateAndTime {
+    public var pickerType = UIDatePicker.Mode.dateAndTime {
         didSet {
             datePicker.datePickerMode = pickerType
             text = currentFormatter.string(from: datePicker.date)
@@ -54,7 +56,7 @@ class LXKDateTimePickerLabel: UILabel {
     }
     
     /// only available in ios 13.4 and above
-    var pickerStyle: LXKDatePickerViewStyle = .automatic {
+    public var pickerStyle: LXKDatePickerViewStyle = .automatic {
         didSet {
             if #available(iOS 13.4, *) {
                 datePicker.preferredDatePickerStyle = pickerStyle.toStyle
@@ -63,7 +65,7 @@ class LXKDateTimePickerLabel: UILabel {
         }
     }
     
-    var formatterTime: DateFormatter = {
+    public var formatterTime: DateFormatter = {
         let formatter = DateFormatter()
         formatter.locale = .current
         formatter.dateStyle = .none
@@ -71,7 +73,7 @@ class LXKDateTimePickerLabel: UILabel {
         return formatter
     }()
     
-    var formatterDate: DateFormatter = {
+    public var formatterDate: DateFormatter = {
         let formatter = DateFormatter()
         formatter.locale = .current
         formatter.dateStyle = .full
@@ -79,7 +81,7 @@ class LXKDateTimePickerLabel: UILabel {
         return formatter
     }()
     
-    var formatterDateTime: DateFormatter = {
+    public var formatterDateTime: DateFormatter = {
         let formatter = DateFormatter()
         formatter.locale = .current
         formatter.dateStyle = .full
@@ -87,14 +89,14 @@ class LXKDateTimePickerLabel: UILabel {
         return formatter
     }()
     
-    var onValueChanged: ((Date) -> Void)?
-    var onButtonDoneTapped: ((Date) -> Void)?
+    public var onValueChanged: ((Date) -> Void)?
+    public var onButtonDoneTapped: ((Date) -> Void)?
     
-    var date: Date {
+    public var date: Date {
         return datePicker.date
     }
     
-    var currentFormatter: DateFormatter {
+    public var currentFormatter: DateFormatter {
         switch pickerType {
         case .time:
             return formatterTime
@@ -107,7 +109,8 @@ class LXKDateTimePickerLabel: UILabel {
         }
     }
     
-    var pickerContainerView: PickerContainerView = {
+    // MARK: - Private Variables
+    private var pickerContainerView: PickerContainerView = {
         let view = PickerContainerView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -123,12 +126,39 @@ class LXKDateTimePickerLabel: UILabel {
         setup()
     }
     
-    func setup() {
+    // MARK: - Public Methods
+    public func changeValue(isNotify: Bool = true) {
+        text = currentFormatter.string(from: datePicker.date)
+        
+        if isNotify {
+            if let onValueChanged = onValueChanged {
+                onValueChanged(datePicker.date)
+            }
+        }
+    }
+    
+    public func setDate(date: Date, animated: Bool = false, isNotify: Bool = true) {
+        datePicker.setDate(date, animated: animated)
+        changeValue(isNotify: isNotify)
+    }
+    
+    public func setMaxDate(date: Date, isNotify: Bool = true) {
+        datePicker.maximumDate = date
+        changeValue(isNotify: isNotify)
+    }
+     
+    public func setMinDate(date: Date, isNotify: Bool = true) {
+        datePicker.minimumDate = date
+        changeValue(isNotify: isNotify)
+    }
+    
+    // MARK: - Private Methods
+    private func setup() {
         layoutViews()
         initValue()
     }
     
-    func layoutViews() {
+    private func layoutViews() {
         self.isUserInteractionEnabled = true
         
         textField.translatesAutoresizingMaskIntoConstraints = false
@@ -141,7 +171,7 @@ class LXKDateTimePickerLabel: UILabel {
 
     }
     
-    func initValue() {
+    private func initValue() {
         datePicker.datePickerMode = pickerType
         datePicker.addTarget(self, action: #selector(datePickerFromValueChanged), for: .valueChanged)
         
@@ -164,7 +194,7 @@ class LXKDateTimePickerLabel: UILabel {
         setDate(date: Date())
     }
     
-    func fitInSuperview(view: UIView) {
+    private func fitInSuperview(view: UIView) {
         view.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         view.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
         view.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
@@ -187,33 +217,7 @@ class LXKDateTimePickerLabel: UILabel {
         
     }
     
-    func changeValue(isNotify: Bool = true) {
-        text = currentFormatter.string(from: datePicker.date)
-        
-        if isNotify {
-            if let onValueChanged = onValueChanged {
-                onValueChanged(datePicker.date)
-            }
-        }
-    }
-    
-    func setDate(date: Date, animated: Bool = false, isNotify: Bool = true) {
-        datePicker.setDate(date, animated: animated)
-        changeValue(isNotify: isNotify)
-    }
-    
-    func setMaxDate(date: Date, isNotify: Bool = true) {
-        datePicker.maximumDate = date
-        changeValue(isNotify: isNotify)
-    }
-     
-    func setMinDate(date: Date, isNotify: Bool = true) {
-        datePicker.minimumDate = date
-        changeValue(isNotify: isNotify)
-    }
-    
-    
-    func setPickerInputView() {
+    private func setPickerInputView() {
         guard #available(iOS 13.4, *) else {
             return setWheelsPickerInputView()
         }
@@ -232,12 +236,12 @@ class LXKDateTimePickerLabel: UILabel {
         }
     }
     
-    func setWheelsPickerInputView() {
+    private func setWheelsPickerInputView() {
         textField.inputView = datePicker
         textField.reloadInputViews()
     }
     
-    func setCompactPickerInputView() {
+    private func setCompactPickerInputView() {
         pickerContainerView = PickerContainerView()
         pickerContainerView.translatesAutoresizingMaskIntoConstraints = false
         pickerContainerView.addSubview(datePicker)
@@ -249,7 +253,7 @@ class LXKDateTimePickerLabel: UILabel {
         textField.reloadInputViews()
     }
     
-    func setInlinePickerInputView() {
+    private func setInlinePickerInputView() {
         if pickerType == .time {
             return setCompactPickerInputView()
         }
